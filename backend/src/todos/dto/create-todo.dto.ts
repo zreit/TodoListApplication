@@ -1,1 +1,4 @@
-export class CreateTodoDto {}
+export class CreateTodoDto {
+  readonly todo: string;
+  readonly priority: number;
+}

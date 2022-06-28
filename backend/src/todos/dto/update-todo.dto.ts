@@ -1,4 +1,7 @@
 import { PartialType } from '@nestjs/swagger';
 import { CreateTodoDto } from './create-todo.dto';
 
-export class UpdateTodoDto extends PartialType(CreateTodoDto) {}
+export class UpdateTodoDto extends PartialType(CreateTodoDto) {
+  todo: string;
+  priority: number;
+}

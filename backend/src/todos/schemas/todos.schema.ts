@@ -3,10 +3,10 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
 
-export type ToDosDocument = ToDo & Document;
+export type ToDosDocument = ToDos & Document;
 
 @Schema()
-export class ToDo {
+export class ToDos {
   @Prop({ required: true })
   todo: string;
 
@@ -15,4 +15,4 @@ export class ToDo {
 }
 
 
-export const ToDoSchema = SchemaFactory.createForClass(ToDo);
+export const ToDosSchema = SchemaFactory.createForClass(ToDo);

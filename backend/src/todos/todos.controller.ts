@@ -10,6 +10,7 @@ import {
 import { TodosService } from './todos.service';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
+import { ToDos } from './schemas/todos.schema';
 
 @Controller('todos')
 export class TodosController {
@@ -21,12 +22,12 @@ export class TodosController {
   }
 
   @Get()
-  findAll() {
+  findAll(): Promise<ToDos[]> {
     return this.todosService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
+  findOne(@Param('id') id: string): Promise<ToDos> {
     return this.todosService.findOne(+id);
   }
 
