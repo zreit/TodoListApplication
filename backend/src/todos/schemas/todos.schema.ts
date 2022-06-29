@@ -15,4 +15,4 @@ export class ToDos {
 }
 
 
-export const ToDosSchema = SchemaFactory.createForClass(ToDo);
+export const ToDosSchema = SchemaFactory.createForClass(ToDos);
