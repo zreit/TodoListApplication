@@ -1,0 +1,16 @@
+button {
+    background-color: #3F51B5;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: rgba(63, 81, 181, 0.7);
+}
+
+button:active {
+    transform: translateY(2px);
+}

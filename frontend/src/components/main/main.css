@@ -1,0 +1,9 @@
+main {
+    height: 76vh;
+    width: 100%;
+    background-color: grey;
+}
+
+.created-todos {
+    display: flex;
+}
