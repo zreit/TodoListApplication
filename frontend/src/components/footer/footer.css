@@ -1,0 +1,11 @@
+footer {
+    height: 10vh;
+    background-color: darkslategrey;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
