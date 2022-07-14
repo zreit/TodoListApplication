@@ -1,0 +1,11 @@
+header {
+    height: 14vh;
+    background-color: darkslategrey;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+}
+
