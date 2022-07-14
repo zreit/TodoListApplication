@@ -24,6 +24,6 @@ COPY --from=development /usr/src/app/ .
 
 RUN npm install --only=production
 
-EXPOSE 3000
+EXPOSE 3001
 
 CMD [ "node", "dist/main" ]
