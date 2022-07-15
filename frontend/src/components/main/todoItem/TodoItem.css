@@ -1,11 +1,44 @@
 .todo-item {
     padding: 20px;
+    height: 100%;
     border-radius: 12px;
-    background-color: bisque;
+    background-color:antiquewhite
 }
 
 .todo-item * {
     margin-bottom: 10px;
+}
+
+.btnUpdateItem {
+    background-color: rgba(216, 182, 29, 1);
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 12px;
+}
+
+.btnUpdateItem:hover {
+    background-color: rgba(216, 182, 29, 0.7);
+}
+
+.btnUpdate:active {
+    transform: translateY(2px);
+}
+
+.btnEditItem {
+    background-color: rgba(216, 182, 29, 1);
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 12px;
+}
+
+.btnEditItem:hover {
+    background-color: rgba(216, 182, 29, 0.7);
+}
+
+.btnEditItem:active {
+    transform: translateY(2px);
 }
 
 .btnDeleteItem {

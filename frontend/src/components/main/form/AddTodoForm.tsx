@@ -28,7 +28,7 @@ const AddTodoForm = (setTodos: any) => {
   return (
     <form onSubmit={submitTodo}>
         <input type="text" name='todo' placeholder='ToDo' required onChange={ (e:any) => setTodo(e.target.value) }/>
-        <input type="number" name='priority' placeholder='Priority' required min='0' onChange={ (e:any) => setPriority(e.target.value) } />
+        <input type="number" name='priority' placeholder='Priority' required min='1' onChange={ (e:any) => setPriority(e.target.value) } />
         <button type="submit">Create</button>
     </form>
   )
