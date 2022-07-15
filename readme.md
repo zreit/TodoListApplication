@@ -1,6 +1,6 @@
 # Distributed Systems Lab
 
-# Installing and running this project
+## Installing and running this project
 To start the application follow these steps:
 1. Navigate to the backend folder and run `docker build -t backend .` to build the backend image.
 2. Start the backend container by running `docker run -p 3001:3001 backend` in the same directory.
