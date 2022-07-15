@@ -6,24 +6,23 @@ import TodoItem from './todoItem/TodoItem';
 
 const Main = () => {
 
-  const [todo, setTodo] = useState([]);
+  const [todos, setTodos] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:3001/todos')
     .then(res => res.json())
-    .then(todos => setTodo(todos));
+    .then(todos => setTodos(todos));
   }, []);
 
-  const fetchedTodos = todo && todo?.map((todo: {_id: string; todo: string; priority: number;}) => 
-    <TodoItem {...todo}></TodoItem>
+  const fetchedTodos = todos && todos?.map((todo: {_id: string; todo: string; priority: number;}) =>
+    <TodoItem key={todo._id} todos={todos} todoName={todo.todo} setTodos={setTodos}></TodoItem>
   );
-
 
   return (
     <main>
-      <AddTodoForm></AddTodoForm>
+      <AddTodoForm setTodos={setTodos}></AddTodoForm>
       <div className='created-todos'>
-        
+        {fetchedTodos}
       </div>
     </main>
   )
