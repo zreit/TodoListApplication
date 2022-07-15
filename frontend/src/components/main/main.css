@@ -1,7 +1,7 @@
 main {
     height: 76vh;
     width: 100%;
-    background-color: grey;
+    background-color: rgb(216, 205, 205);
 }
 
 .created-todos {

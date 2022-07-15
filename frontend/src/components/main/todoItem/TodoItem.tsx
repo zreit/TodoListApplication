@@ -50,7 +50,7 @@ const TodoItem = ( {todos, todoName, setTodos} :any) => {
     <div className='todo-item'>
         <h2>{ todos && todos[todoIndex]?.todo }</h2>
         {updateTodoToggle?<input type="text" name='todo' placeholder='ToDo' required onChange={ (e:any) => setTodoUpdate(e.target.value) }></input>:""}
-        <h3>Priority { todos && todos[todoIndex]?.priority }</h3>
+        <p>Priority { todos && todos[todoIndex]?.priority }</p>
         {updateTodoToggle?<input type="number" name='priority' placeholder='Priority' min='1' required onChange={ (e:any) => setPriorityUpdate(e.target.value) }></input>:""}
         <button className='btnDeleteItem' onClick={deleteItem}>Delete</button>
         {updateTodoToggle?<button className='btnUpdateItem' onClick={submitPutItem}>Update</button>:<button className='btnEditItem' onClick={updateItem}>Edit</button>}
