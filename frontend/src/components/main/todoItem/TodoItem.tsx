@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
 
 
-const TodoItem = () => {
-    const [todo, setTodo] = useState([{
-        todo: 'hallo',
-        priority: 1
-    }]);
-    
+const TodoItem = ({ todo }:{_id:string;todo:string;priority: number}) => {
   return (
     <div className='todo-item'>
         <h2>{ }</h2>
+        <h3>Priority { }</h3>
     </div>
   )
 }
