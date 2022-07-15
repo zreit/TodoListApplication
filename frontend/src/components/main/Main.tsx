@@ -1,7 +1,7 @@
 import { resolveSoa } from 'dns';
 import React, { useEffect, useState } from 'react'
 import AddTodoForm from './form/AddTodoForm'
-import './Main.css'
+import './main.css'
 import TodoItem from './todoItem/TodoItem';
 
 const Main = () => {
